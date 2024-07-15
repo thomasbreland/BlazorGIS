@@ -43,7 +43,7 @@ jobs:
       uses: actions/upload-pages-artifact@v3
       with:
         # Upload build output from corresponding wwwroot directory
-        path: './publish'
+        path: './publish/wwwroot'
 
   deploy:
     needs: build
