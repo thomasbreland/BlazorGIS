@@ -1,9 +1,4 @@
-﻿//import Map from 'ol/Map.js';
-//import OSM from 'ol/source/OSM.js';
-//import TileLayer from 'ol/layer/Tile.js';
-//import View from 'ol/View.js';
-
-export function initMap() {
+﻿export function initMap() {
     const map = new ol.Map({
         target: 'map',
         layers: [

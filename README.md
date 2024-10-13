@@ -20,6 +20,12 @@ Use files in project-level publish folder for the project itself, i.e., BlazorGI
 
 Uses BlazorGIS/BlazorGIS/publish/wwwroot for GitHub Pages
 
+The GitHub Action here uses `dotnet publish -c Release -o publish` which causes the following warning:
+
+*'The "--output" option isn't supported when building a solution. Specifying a solution-level output path results in all projects copying outputs to the same directory, which can lead to inconsistent builds.'*
+
+But, this solution only contains one project.
+
 Build file uses results from output of `dotnet publish -c Release --property:PublishDir=publish`
 
 ## Datasets
